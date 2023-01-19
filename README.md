@@ -150,6 +150,8 @@ More Details.
 JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
 
 The implementation of JVM is also actively released by other companies besides Sun Micro Systems.
+![jre2](https://user-images.githubusercontent.com/92047366/213496520-c80c8e41-24de-4c27-8152-dbbe2e399e8f.png)
+
 <h5>JDK</h5>
 JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools.
 
@@ -158,4 +160,7 @@ JDK is an implementation of any one of the below given Java Platforms released b
 Standard Edition Java Platform
 Enterprise Edition Java Platform
 Micro Edition Java Platform
-The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. 
+![jdk2](https://user-images.githubusercontent.com/92047366/213496615-2382ca6c-1ba2-4609-b6b0-02c07af2e916.png)
+
+
