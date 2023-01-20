@@ -163,4 +163,14 @@ Micro Edition Java Platform
 The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. 
 ![jdk2](https://user-images.githubusercontent.com/92047366/213496615-2382ca6c-1ba2-4609-b6b0-02c07af2e916.png)
 
+<h3>Java Variables</h3>
+A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
 
+Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+
+There are two types of data types in Java: primitive and non-primitive.
+
+<h5>Variable</h5>
+A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.
+![variable](https://user-images.githubusercontent.com/92047366/213726085-1ef66a23-f116-4aae-9f29-10bd507baf6c.png)
+int data=50;//Here data is variable  
