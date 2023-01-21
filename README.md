@@ -444,5 +444,13 @@ System.out.println(txt.indexOf("locate")); // Outputs 7
 
 Java counts positions from zero.
 0 is the first position in a string, 1 is the second, 2 is the third ...
+<h5>String Concatenation</h5>
+The + operator can be used between strings to combine them. This is called concatenation:
 
+Example
+String firstName = "John";
+String lastName = "Doe";
+System.out.println(firstName + " " + lastName);
+
+Note that we have added an empty text (" ") to create a space between firstName and lastName on print.
 
