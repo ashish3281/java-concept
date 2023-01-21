@@ -453,4 +453,15 @@ String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 
 Note that we have added an empty text (" ") to create a space between firstName and lastName on print.
+<h5>Strings - Special Characters</h5>
+Because strings must be written within quotes, Java will misunderstand this string, and generate an error:
 
+String txt = "We are the so-called "Vikings" from the north.";
+The solution to avoid this problem, is to use the backslash escape character.
+
+The backslash (\) escape character turns special characters into string characters:
+
+Escape character	Result	Description
+\'	'	Single quote
+\"	"	Double quote
+\\	\	Backslash
