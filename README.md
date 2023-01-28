@@ -542,3 +542,30 @@ class Second {
     System.out.println(myObj.x);
   }
 }</pre>
+<h3>Java Class Attributes</h3>
+In the previous chapter, we used the term "variable" for x in the example (as shown below). It is actually an attribute of the class. Or you could say that class attributes are variables within a class:
+
+Example
+Create a class called "Main" with two attributes: x and y:
+<pre>
+public class Main {
+  int x = 5;
+  int y = 3;
+}</pre>
+<h5>Accessing Attributes</h5>
+You can access attributes by creating an object of the class, and by using the dot syntax (.):
+
+The following example will create an object of the Main class, with the name myObj. We use the x attribute on the object to print its value:
+
+Example
+Create an object called "myObj" and print the value of x:
+<pre>
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+</pre>
