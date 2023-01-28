@@ -465,3 +465,34 @@ Escape character	Result	Description
 \'	'	Single quote
 \"	"	Double quote
 \\	\	Backslash
+
+<h3>Java - What is OOP?</h3>
+<p>
+OOP stands for Object-Oriented Programming.
+
+Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
+
+Object-oriented programming has several advantages over procedural programming:
+
+OOP is faster and easier to execute
+OOP provides a clear structure for the programs
+OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
+OOP makes it possible to create full reusable applications with less code and shorter development time
+</p>
+<h5>Java - What are Classes and Objects?</h5>
+Classes and objects are the two main aspects of object-oriented programming.
+
+<h3>Java Classes/Objects</h3>
+Java is an object-oriented programming language.
+
+Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.
+
+Create a Class
+To create a class, use the keyword class:
+<pre>
+public class Main {
+  int x = 5;
+}
+</pre>
