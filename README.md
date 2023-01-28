@@ -496,3 +496,30 @@ public class Main {
   int x = 5;
 }
 </pre>
+<h5>Create an Object</h5>
+In Java, an object is created from a class. We have already created the class named Main, so now we can use this to create objects.
+
+To create an object of Main, specify the class name, followed by the object name, and use the keyword new:
+<pre>
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+</pre>
+<h5>Multiple Objects</h5>
+<pre>
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+</pre>
