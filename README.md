@@ -569,3 +569,48 @@ public class Main {
   }
 }
 </pre>
+<h5>Modify Attributes</h5>
+You can also modify attribute values:
+
+Example
+Set the value of x to 40:
+<pre>
+public class Main {
+  int x;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 40;
+    System.out.println(myObj.x);
+  }
+}
+ 
+
+Or override existing values:
+
+Example
+Change the value of x to 25:
+
+public class Main {
+  int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // x is now 25
+    System.out.println(myObj.x);
+  }
+}
+ 
+
+If you don't want the ability to override existing values, declare the attribute as final:
+
+Example
+public class Main {
+  final int x = 10;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 25; // will generate an error: cannot assign a value to a final variable
+    System.out.println(myObj.x);
+  }
+}</pre>
