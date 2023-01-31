@@ -614,3 +614,31 @@ public class Main {
     System.out.println(myObj.x);
   }
 }</pre>
+<h3>Java Class Methods</h3>
+You learned from the Java Methods chapter that methods are declared within a class, and that they are used to perform certain actions:
+
+Example
+Create a method named myMethod() in Main:
+<pre>
+public class Main {
+  static void myMethod() {
+    System.out.println("Hello World!");
+  }
+}
+ </pre>
+myMethod() prints a text (the action), when it is called. To call a method, write the method's name followed by two parentheses () and a semicolon;
+
+Example
+Inside main, call myMethod():
+<pre>
+public class Main {
+  static void myMethod() {
+    System.out.println("Hello World!");
+  }
+
+  public static void main(String[] args) {
+    myMethod();
+  }
+}
+</pre>
+// Outputs "Hello World!"
