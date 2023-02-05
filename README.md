@@ -1066,3 +1066,77 @@ public class Main {
 
 // Outputs 15 (5 + 10)
 </pre>
+<h5>Private Inner Class</h5>
+Unlike a "regular" class, an inner class can be private or protected. If you don't want outside objects to access the inner class, declare the class as private:
+<pre>
+Example
+class OuterClass {
+  int x = 10;
+
+  private class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.y + myOuter.x);
+  }
+}
+ </pre>
+If you try to access a private inner class from an outside class, an error occurs:
+
+Main.java:13: error: OuterClass.InnerClass has private access in OuterClass
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+              ^
+
+<h5>Static Inner Class</h5>
+An inner class can also be static, which means that you can access it without creating an object of the outer class:
+<pre>
+Example
+class OuterClass {
+  int x = 10;
+
+  static class InnerClass {
+    int y = 5;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass.InnerClass myInner = new OuterClass.InnerClass();
+    System.out.println(myInner.y);
+  }
+}
+
+// Outputs 5
+ </pre>
+
+Note: just like static attributes and methods, a static inner class does not have access to members of the outer class.
+
+<h5>Access Outer Class From Inner Class</h5>
+One advantage of inner classes, is that they can access attributes and methods of the outer class:
+<pre>
+Example
+class OuterClass {
+  int x = 10;
+
+  class InnerClass {
+    public int myInnerMethod() {
+      return x;
+    }
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    OuterClass myOuter = new OuterClass();
+    OuterClass.InnerClass myInner = myOuter.new InnerClass();
+    System.out.println(myInner.myInnerMethod());
+  }
+}
+
+// Outputs 10
+</pre>
