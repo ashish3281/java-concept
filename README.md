@@ -1403,6 +1403,27 @@ class Main {
 }
 </pre>
 Note: If you enter wrong input (e.g. text in a numerical input), you will get an exception/error message (like "InputMismatchException").
+<h3>Java Dates</h3>
+Java does not have a built-in Date class, but we can import the java.time package to work with the date and time API. The package includes many date and time classes. For example:
 
+Class	Description
+LocalDate	Represents a date (year, month, day (yyyy-MM-dd))
+LocalTime	Represents a time (hour, minute, second and nanoseconds (HH-mm-ss-ns))
+LocalDateTime	Represents both a date and a time (yyyy-MM-dd-HH-mm-ss-ns)
+DateTimeFormatter	Formatter for displaying and parsing date-time objects
+If you don't know what a package is, read our Java Packages Tutorial.
 
+<h5>Display Current Date</h5>
+To display the current date, import the java.time.LocalDate class, and use its now() method:
+<pre>
+Example
+import java.time.LocalDate; // import the LocalDate class
+
+public class Main {
+  public static void main(String[] args) {
+    LocalDate myObj = LocalDate.now(); // Create a date object
+    System.out.println(myObj); // Display the current date
+  }
+}
+</pre>
 
